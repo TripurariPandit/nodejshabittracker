@@ -1,0 +1,15 @@
+<!-- sign.css -->
+<link rel="stylesheet" href="/css/sign.css"> 
+
+<!-- Sign in page -->
+<div class="form-container">
+    <h1 class="heading">Welcome</h1>
+    <div class="fromClass">
+        <form action="/users/create-session" method="POST">
+            <input type="email" name="email" placeholder="Enter email" required><br>
+            <input type="password" name="password" placeholder="Enter password" required><br>
+            <a href="/users/forgetPassword">Forget Password</a>
+            <button type="submit">Sign In</button>
+        </form>
+    </div>
+</div>

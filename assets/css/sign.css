@@ -1,0 +1,52 @@
+.form-container{
+    width: 40%;
+    margin: auto;
+    background-color: #5b8d76;
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    padding: 2rem 0rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: 0rem 0rem 2rem 0.5rem rgb(229, 228, 228);
+    border-radius: 0.3rem;
+}
+
+h1{
+    margin:0.2rem 0rem;
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.fromClass{
+    width: 50%;
+}
+
+input{
+    width: 100%;
+    border-radius: 5rem;
+    padding: 0.5rem 1rem;
+    border: none;
+    box-sizing: border-box;
+    outline: none;
+    margin: 0.6rem 0rem;
+    font-size: 1rem;
+}
+
+button{
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    border: none;
+    border-radius: 0.3rem;
+    cursor: pointer;
+    background: white;
+}
+
+.fromClass a{
+    text-decoration: none;
+    font-size: 1.1rem;
+    color: burlywood;
+    padding:0.5rem 0.5rem 0rem 2rem;
+}

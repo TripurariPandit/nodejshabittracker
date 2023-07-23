@@ -1,0 +1,16 @@
+<!-- header parser -->
+<link rel="stylesheet" href="/css/header.css">
+<div class="navBar">
+    <a href="/" id="name-of-app">Habit Tracker</a>
+    <% if (locals.user){ %>
+        <h1>Welcome <%= locals.user.name%></h1>
+        <a href="/users/sign-out" id="logout"> Log Out</a>
+    <%} else { %>
+        <div class="noUser">
+            <ul>
+                <li> <a href="/users/sign-in"> Sign In </a> </li>
+                <li>  <a href="/users/sign-up"> Sign Up </a> </li>
+            </ul>
+        </div>
+    <%}%>
+</div>

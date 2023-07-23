@@ -1,0 +1,31 @@
+<script src="https://kit.fontawesome.com/6866a8ccc0.js" crossorigin="anonymous"></script>
+
+<% if(locals.user) {%>
+    <div id="container">
+        <div class="quotes">
+            <h1>"A good habit makes people Successful in life"</h1>
+            <p>Discipline is choosing between what you want now and what you want most. !</p>
+        </div>
+        <div id="input-div">
+            <form action="/habit/createHabit" id="habit-form" method="post">
+                <input type="text" name="habit" placeholder="Enter your habit..." required>
+                <button type="submit" id="form-btn">Add Habits</button>
+            </form>
+        </div>
+        <div id="symbol">
+            <i class="fas fa-check-circle"></i>
+            <span>Done</span>
+            <i class="fas fa-times-circle"></i>
+            <span>not Done</span>
+            <i class="fas fa-minus-circle"></i>
+            <span>Unmarked</span>
+            <button id="weekly-view__btn-2" onclick="showDailyData()">Daily</button>
+            <button id="weekly-view__btn" onclick="showWeeklyData()">weekly</button>
+        </div>
+        <div id="habit-display-container">
+            <ul id="habit-list-ul">
+                <%- include('_habits'); %>
+            </ul>
+        </div>
+    </div>
+<%}%>    

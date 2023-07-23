@@ -1,0 +1,164 @@
+body{
+    margin: 0;
+}
+
+#container{
+    width: 60%;
+    margin: 2.5rem auto ;
+    text-align: center;
+}
+
+.quotes h1 {
+    font-size: 1.6rem;
+    color: whitesmoke;
+    margin: 0.5rem;
+    padding: 0.5rem 1rem;
+    background-color: green;
+    border-radius: 0.3rem;
+    box-shadow: 0rem 0rem 0.5rem 0.1rem rgb(198, 196, 196);
+}
+
+.quotes p {
+    color: red;
+}
+
+#input-div input{
+    width: 70%;
+    padding: 0.5rem 0.8rem;
+    outline: none;
+    border-radius: 1.5rem;
+    border: 1px solid #02005f7a;
+    font-size: 0.8rem;
+    box-sizing: border-box;
+}
+
+#form-btn{
+    padding: 0.5rem 0.8rem;
+    outline: none;
+    border-radius: 1.5rem;
+    font-size: 0.8rem;
+    box-sizing: border-box;
+    background-color: #02005f7a;
+    color: whitesmoke;
+    border: none;
+    margin-left: 0.3rem;
+    cursor: pointer;
+}
+
+#symbol{
+    margin: 1.2rem auto;
+}
+
+.fas{
+    font-size: 1.4rem;
+}
+
+#symbol span{
+    padding: 0rem 0.9rem 0rem 0.2rem;
+}
+
+.fa-check-circle {
+    color: green
+}
+
+.fa-times-circle {
+    color: red;
+}
+
+.fa-minus-circle {
+    color: yellow
+}
+
+#weekly-view__btn,
+#weekly-view__btn-2 {
+    padding: 0.2rem 0.3rem;
+    background-color: #02005f7a;
+    color: white;
+    border: none;
+    font-size: 0.9rem;
+    border-radius: 0 0.9rem 0.9rem 0;
+    cursor: pointer;
+}
+
+#weekly-view__btn-2 {
+    border-radius: 0.9rem 0 0 0.9rem;
+}
+
+/* ################# */
+
+#habit-display-container{
+    height: 55vh;
+    overflow-x: scroll;
+    padding: 1rem;
+}
+
+#habit-display-container::-webkit-scrollbar{
+    display: none;
+}
+
+#habit-list-ul{
+    list-style: none;
+    padding: 0;
+}
+
+.habit-list-item{
+    background-color: #02005f7a;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 4rem;
+    padding: 0rem 1rem;
+    border-radius: 0.5rem;
+}
+
+a{
+    text-decoration: none;
+}
+
+.habit-list-item-name{
+    color: whitesmoke;
+    font-size: 1.5rem;
+}
+
+.favorite{
+    font-size: 1.3rem;
+}
+
+.remove{
+    color: purple;
+    margin-left: 10px;
+    font-size: 1.3rem;
+}
+
+.fav-heart{
+    color: red;
+}
+
+.not-fav-heart{
+    color: white;
+}
+
+.weekly-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.6rem;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #4b3f8d;
+    border-radius: 0 0 0.9rem 0.9rem;
+    margin: 1rem 0rem;
+    padding: 1rem 0rem;
+}
+
+.weekly-date{
+    background-color: #2ba18375;
+    border-radius: 0.3rem;
+    flex-basis: 13%;
+    padding: 2rem 0rem;
+}
+
+.weekly-date p{
+    font-size: 0.9rem;
+    color: white;
+    margin: 0.5rem;
+}

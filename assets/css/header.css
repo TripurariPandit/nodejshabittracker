@@ -1,0 +1,44 @@
+.navBar{
+    background-color: brown;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem 2rem;
+    color: white;
+    box-shadow: 0rem 0rem 1.5rem 0.2rem rgb(130, 127, 127);
+}
+
+.navBar h1{
+    margin: 0;
+}
+
+#name-of-app{
+    font-size: 3rem;
+    text-decoration: none;
+    color: white;
+}
+
+#logout{
+    font-size: 1.5rem;
+    margin-right: 10px;
+    text-decoration: none;
+    color: white;
+}
+
+.noUser ul{
+    display: flex;
+    margin: 10px;
+    justify-content: space-between;
+}
+
+.noUser li{
+    list-style: none;
+    font-size: 1.5rem;
+    padding-left: 0.8rem;
+}
+
+.noUser li a{
+    text-decoration: none;
+    color: white;
+}
