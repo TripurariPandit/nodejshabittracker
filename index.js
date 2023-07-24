@@ -29,6 +29,8 @@ app.set('layout extractScripts', true);
 app.set('view engine', 'ejs');
 app.set('views', './views');
 
+const dbURL = 'mongodb+srv://tripurari:Tripurari@cluster0.8j7vazq.mongodb.net/mernstack?retryWrites=true&w=majority';
+
 app.use(session({
     name: 'habittracker',
     secret: env.session_cookie,
@@ -41,7 +43,8 @@ app.use(session({
         {
             mongooseConnection: db,
             autoRemove: 'disabled',
-            mongoUrl:'mongodb://127.0.0.1/habitTracker'
+            // mongoUrl:'mongodb://127.0.0.1/habitTracker'
+            mongoUrl: dbURL
             // mongoUrl:'mongodb://127.0.0.1:27017/habitTracker'
         },
         function(err){
