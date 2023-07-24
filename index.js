@@ -1,4 +1,5 @@
 const express = require('express');
+const env = require('./config/environment');
 const port = 8000;
 const app = express();
 const expressLayouts = require('express-ejs-layouts');
@@ -30,7 +31,7 @@ app.set('views', './views');
 
 app.use(session({
     name: 'habittracker',
-    secret: 'habit',
+    secret: env.session_cookie,
     saveUninitialized: false,
     resave: false,
     cookie: {
