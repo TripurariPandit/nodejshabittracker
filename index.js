@@ -41,8 +41,8 @@ app.use(session({
         {
             mongooseConnection: db,
             autoRemove: 'disabled',
-            // mongoUrl:'mongodb://127.0.0.1/habitTracker'
-            mongoUrl:'mongodb://127.0.0.1:27017/habitTracker'
+            mongoUrl:'mongodb://127.0.0.1/habitTracker'
+            // mongoUrl:'mongodb://127.0.0.1:27017/habitTracker'
         },
         function(err){
             console.log(err || 'connect-mongodb setup ok');
