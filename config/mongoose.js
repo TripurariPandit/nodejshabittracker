@@ -5,7 +5,7 @@ const dbUsername = process.env.MONGODB_USERNAME;
 const dbPassword = process.env.MONGODB_PASSWORD;
 const dbName = process.env.MONGODB_DBNAME;
 
-const dbURL = 'mongodb+srv://tripurari:Tripurari@cluster0.8j7vazq.mongodb.net/mernstack?retryWrites=true&w=majority';
+const MongoURI = 'mongodb+srv://tripurari:Tripurari@cluster0.8j7vazq.mongodb.net/mernstack?retryWrites=true&w=majority';
 
 // const dbURL = `mongodb+srv://${dbUsername}:${dbPassword}@cluster0.8j7vazq.mongodb.net/${dbName}?retryWrites=true&w=majority`;
 
@@ -22,7 +22,7 @@ const dbURL = 'mongodb+srv://tripurari:Tripurari@cluster0.8j7vazq.mongodb.net/me
 //     console.error('Error connecting to the database:', error);
 //   });
 
-mongoose.connect(dbURL, {
+mongoose.connect(MongoURI, {
   useNewUrlParser: true,
   useUnifiedTopology: true
 }).then(()=>{
